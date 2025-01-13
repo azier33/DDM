@@ -1,7 +1,7 @@
 <h1 align=center>
-SemCity: Semantic Scene Generation 
-
-with Triplane Diffusion
+Towards High-Fidelity and Temporal-Consistency Generation for Radar Echo Perception Via 
+    
+Differential Diffusion Model
 </h1>
 
 ![fig0](./figs/semcity.gif)
