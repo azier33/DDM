@@ -20,9 +20,7 @@ We test our code on Ubuntu 20.04 with a single RTX 4090 GPU.
     git clone https://github.com/zoomin-lee/SemCity.git
     conda create -n CCDM 
     conda activate CCDM
-    conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=11.8 -c pytorch -c nvidia
-    pip install blobfile matplotlib prettytable tensorboard tensorboardX scikit-learn tqdm
-    pip install --user -e .
+    conda install -r requirements.txt
 
 ### Datasets
 We use the Sevirlr and MovingMnist datasets. See [dataset.md](./dataset/dataset.md) for detailed data structure.
