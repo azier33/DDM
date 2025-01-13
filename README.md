@@ -13,7 +13,7 @@ with Triplane Diffusion
 [Paper](https://arxiv.org/abs/2403.07773) | [Project Page](https://sglab.kaist.ac.kr/SemCity)
 
 ## 📌 Setup
-We test our code on Ubuntu 20.04 with a single RTX 4090 GPU.
+We test our code on Ubuntu 22.04 with a single RTX 4090 GPU.
 
 ### Environment 
 
@@ -29,54 +29,36 @@ Please adjust the `sequences` folder path in `dataset/path_manager.py`.
 
 ## 📌 Training
 Train the Triplane Autoencoder and then the Triplane Diffusion.
-You can set dataset using `--dataset kitti` or `--dataset carla`.
+You can set dataset using `--dataset /path/to/sevir` or `--dataset path/to/MM`.
 In/outpainting and semantic scene completion refinement are only possible with SemanticKITTI datasets.
 
-### Triplane Autoencoder
+### Trianing
 
-    python scripts/train_ae_main.py --save_path exp/ae
+    python script/Trainer_diff.py
 
-When you are finished training the triplane autoencoder, save the triplane. 
-The triplane is a proxy representation of the scene for triplane diffusion training.
+If you want to train an no diff method ,you can user the command follow.
 
-    python scripts/save_triplane.py --data_name voxels --save_tail .npy --resume {ae.pt path}
+    python scripts/Trainer_wo_diff.py
 
-If you want to train semantic scene completion refinement, also save the triplane of the result of the ssc method (e.g. monoscene).
 
-    python scripts/save_triplane.py --data_name monoscene --save_tail _monoscene.npy --resume {ae.pt path}
+### Evaluation
 
-### Triplane Diffusion
+For evaluation for the diff generation,
 
-For training for semantic scene generation or in/outpainting,
+    python scripts/cal_diff_score.py
 
-    python scripts/train_diffusion_main.py --triplane_loss_type l2 --save_path exp/diff
+For evaluation for the no_diff generation,
 
-For training semantic scene completion refinement,
+    python scripts/cal_score.py
 
-    python scripts/train_diffusion_main.py --ssc_refine --refine_dataset monoscene --triplane_loss_type l1 --save_path exp/diff
-
-## 📌 Sampling
-In `dataset/path_manager.py`, adjust the triplane autoencoder and triplane diffusion `.pt` paths to `AE_PATH` and `DIFF_PATH`.
-
+## 📌 Visualizing
 ![fig1](./figs/semcity.png)
 
-To generate 3D semantic scene like `fig(a)`,
+To visualize the generation which obtain from model that we pre-trained,
 
-    python sampling/generation.py --num_samples 10 --save_path exp/gen
+    python scripts/cal_score.py
 
-For semantic scene completion refinement like `fig(b)`,
-
-    python sampling/ssc_refine.py --refine_dataset monoscene --save_path exp/ssc_refine
-
-Currently, we're only releasing the code to outpaint twice the original scene.
-
-    python sampling/outpainting.py --load_path figs/000840.label --save_path exp/out
-
-For inpainting, as in `fig(d)`, you can define the region (top right, top left, bottom right, bottom left) where you want to regenerate.
-
-    python sampling/inpainting.py --load_path figs/000840.label --save_path exp/in
-
-## 📌 Evaluation
+## 📌 Dataset
 
 We render our scene with [pyrender](https://pyrender.readthedocs.io/en/latest/index.html) and then evaluate it using [torch-fidelity](https://github.com/toshas/torch-fidelity). 
 
