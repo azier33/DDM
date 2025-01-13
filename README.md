@@ -52,7 +52,10 @@ For evaluation for the no_diff generation,
     python scripts/cal_score.py
 
 ## 📌 Visualizing
-![fig1](./figs/semcity.png)
+![fig1](./data/Sevir/train_B0109_S436000_pred.gif)
+![fig2](./data/Sevir/train_B0119_S475000_pred.gif)
+![fig3](./data/Sevir/train_B0120_S476000_pred.gif)
+![fig4](./data/Sevir/train_B0121_S480000_pred.gif)
 
 To visualize the generation which obtain from model that we pre-trained,
 
