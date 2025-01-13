@@ -6,26 +6,26 @@ with Triplane Diffusion
 
 ![fig0](./figs/semcity.gif)
 
-> SemCity : Semantic Scene Generation with Triplane Diffusion
+> Towards High-Fidelity and Temporal-Consistency Generation for Radar Echo Perception Via Differential Diffusion Model
 > 
-> Jumin Lee*, Sebin Lee*, Changho Jo, Woobin Im, Juhyeong Seon and Sung-Eui Yoon* 
+> Junyi Li, Beibei Jin, Xiaohui Song, Jianye Wang, JinDong Li, Pengfei Zhang 
 
 [Paper](https://arxiv.org/abs/2403.07773) | [Project Page](https://sglab.kaist.ac.kr/SemCity)
 
 ## 📌 Setup
-We test our code on Ubuntu 20.04 with a single RTX 3090 or 4090 GPU.
+We test our code on Ubuntu 20.04 with a single RTX 4090 GPU.
 
 ### Environment 
 
     git clone https://github.com/zoomin-lee/SemCity.git
-    conda create -n semcity 
-    conda activate semcity
+    conda create -n CCDM 
+    conda activate CCDM
     conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=11.8 -c pytorch -c nvidia
     pip install blobfile matplotlib prettytable tensorboard tensorboardX scikit-learn tqdm
     pip install --user -e .
 
 ### Datasets
-We use the SemanticKITTI and CarlaSC datasets. See [dataset.md](./dataset/dataset.md) for detailed data structure.
+We use the Sevirlr and MovingMnist datasets. See [dataset.md](./dataset/dataset.md) for detailed data structure.
 
 Please adjust the `sequences` folder path in `dataset/path_manager.py`.
 
