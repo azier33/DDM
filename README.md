@@ -17,7 +17,7 @@ We test our code on Ubuntu 22.04 with a single RTX 4090 GPU.
 
 ### Environment 
 
-    git clone https://github.com/zoomin-lee/SemCity.git
+    git clone https://github.com/azier33/DDM.git
     conda create -n CCDM 
     conda activate CCDM
     conda install -r requirements.txt
