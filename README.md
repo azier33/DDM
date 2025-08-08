@@ -50,14 +50,32 @@ For evaluation for the no_diff generation,
     python scripts/cal_score.py
 
 ## 📌 Visualizing
-![fig1](./data/Sevir/train_B0109_S436000_pred.gif)
-![fig2](./data/Sevir/train_B0119_S475000_pred.gif)
-![fig3](./data/Sevir/train_B0120_S476000_pred.gif)
-![fig4](./data/Sevir/train_B0121_S480000_pred.gif)
+![fig1](./data/Sevir/pred_sample0.gif)
+![fig2](./data/Sevir/pred_sample1.gif)
+![fig3](./data/Sevir/pred_sample2.gif)
+![fig4](./data/Sevir/pred_sample3.gif)
+![fig4](./data/Sevir/pred_sample4.gif)
 
+The predicted heat map
+![fig0](./data/Sevir/pred/b0_t0_heatmap.png)
+![fig1](./data/Sevir/pred/b0_t1_heatmap.png)
+![fig2](./data/Sevir/pred/b0_t2_heatmap.png)
+![fig3](./data/Sevir/pred/b0_t3_heatmap.png)
+![fig4](./data/Sevir/pred/b0_t4_heatmap.png)
+
+The truth heat map
+![fig0](./data/Sevir/truth/b0_t0_heatmap.png)
+![fig1](./data/Sevir/truth/b0_t1_heatmap.png)
+![fig2](./data/Sevir/truth/b0_t2_heatmap.png)
+![fig3](./data/Sevir/truth/b0_t3_heatmap.png)
+![fig4](./data/Sevir/truth/b0_t4_heatmap.png)
+
+The truth heatmap
 To visualize the generation which obtain from model that we pre-trained,
 
-    python scripts/cal_score.py
+    python scripts/visualize.py
+or
+    #python scripts/visualize.py
 
 ## 📌 Dataset
 You can download the dataset that we used in the DDM samed to the [Prediff](https://github.com/gaozhihan/PreDiff) used. 
