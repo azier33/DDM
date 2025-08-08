@@ -50,12 +50,14 @@ For evaluation for the no_diff generation,
     python scripts/cal_score.py
 
 ## 📌 Visualizing
-![fig1](./data/Sevir/pred_sample0.gif)
-![fig2](./data/Sevir/pred_sample1.gif)
-![fig3](./data/Sevir/pred_sample2.gif)
-![fig4](./data/Sevir/pred_sample3.gif)
-![fig4](./data/Sevir/pred_sample4.gif)
-
+The predicted video
+<p align="center">
+  <img src="./data/Sevir/pred_sample0.gif" width="150"/>
+  <img src="./data/Sevir/pred_sample1.gif" width="150"/>
+  <img src="./data/Sevir/pred_sample2.gif" width="150"/>
+  <img src="./data/Sevir/pred_sample3.gif" width="150"/>
+  <img src="./data/Sevir/pred_sample4.gif" width="150"/>
+</p>
 The predicted heatmap
 <p align="center">
   <img src="./data/Sevir/pred/b0_t0_heatmap.png" width="150"/>
