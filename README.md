@@ -56,21 +56,24 @@ For evaluation for the no_diff generation,
 ![fig4](./data/Sevir/pred_sample3.gif)
 ![fig4](./data/Sevir/pred_sample4.gif)
 
-The predicted heat map
-![fig0](./data/Sevir/pred/b0_t0_heatmap.png)
-![fig1](./data/Sevir/pred/b0_t1_heatmap.png)
-![fig2](./data/Sevir/pred/b0_t2_heatmap.png)
-![fig3](./data/Sevir/pred/b0_t3_heatmap.png)
-![fig4](./data/Sevir/pred/b0_t4_heatmap.png)
+The predicted heatmap
+<p align="center">
+  <img src="./data/Sevir/pred/b0_t0_heatmap.png" width="150"/>
+  <img src="./data/Sevir/pred/b0_t1_heatmap.png" width="150"/>
+  <img src="./data/Sevir/pred/b0_t2_heatmap.png" width="150"/>
+  <img src="./data/Sevir/pred/b0_t3_heatmap.png" width="150"/>
+  <img src="./data/Sevir/pred/b0_t4_heatmap.png" width="150"/>
+</p>
 
-The truth heat map
-![fig0](./data/Sevir/truth/b0_t0_heatmap.png)
-![fig1](./data/Sevir/truth/b0_t1_heatmap.png)
-![fig2](./data/Sevir/truth/b0_t2_heatmap.png)
-![fig3](./data/Sevir/truth/b0_t3_heatmap.png)
-![fig4](./data/Sevir/truth/b0_t4_heatmap.png)
+The truth heatmap  
+<p align="center">
+  <img src="./data/Sevir/truth/b0_t0_heatmap.png" width="150"/>
+  <img src="./data/Sevir/truth/b0_t1_heatmap.png" width="150"/>
+  <img src="./data/Sevir/truth/b0_t2_heatmap.png" width="150"/>
+  <img src="./data/Sevir/truth/b0_t3_heatmap.png" width="150"/>
+  <img src="./data/Sevir/truth/b0_t4_heatmap.png" width="150"/>
+</p>
 
-The truth heatmap
 To visualize the generation which obtain from model that we pre-trained,
 
     python scripts/visualize.py
