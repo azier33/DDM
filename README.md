@@ -41,7 +41,7 @@ If you want to train an no diff method ,you can user the command follow.
 
 
 ### Evaluation
-We had released the pretrained model weight in DDM(https://huggingface.co/LiJunYi/DDM/tree/main), you can download the files and put them in the path [root_dir/DDM/logs/]. 
+We had released the pretrained model weight in [DDM](https://huggingface.co/LiJunYi/DDM/tree/main), you can download the files and put them in the path `--/root_dir/DDM/logs/`. 
 
 For evaluation for the diff generation,
 
