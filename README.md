@@ -1,7 +1,5 @@
 <h1 align=center>
-Towards High-Fidelity and Temporal-Consistency Generation for Radar Echo Perception Via 
-    
-Differential Diffusion Model
+Atmospheric cloud movement modeling with Inter‑Frame Difference Diffusion Model
 </h1>
 
 ![fig0](./figs/semcity.gif)
